@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Jost:wght@300&family=Poppins:wght@300&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.progress-circular{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: conic-gradient(#880bea 0deg, #ededed 0deg) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress-circular::after{
+    position: absolute;
+    content: '';
+    width: 120px;
+    height: 120px;
+    background: #fff;
+    border-radius: 50%;
+}
+.value{
+    font-size: 30px;
+    font-weight: 600;
+    color: #880bea;
+    z-index: 9;
+}
+.text{
+    font-size: 25px;
+    font-weight: 600;
+    color: #880bea;
+    margin: 20px 0;
+}
+
